@@ -1,0 +1,7 @@
+.lista-personas {
+  padding-left: 4vw;
+  list-style-type: none;
+  display: flex;
+  margin-left: 10vw;
+  width: 100%;
+}

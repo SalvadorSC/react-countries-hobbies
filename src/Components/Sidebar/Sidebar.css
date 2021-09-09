@@ -1,0 +1,9 @@
+.sidebar {
+  width: 10vw;
+  background-color: #ddd;
+  position: fixed;
+  height: 80vh;
+}
+.sidebar h2 {
+  margin-left: 20px;
+}

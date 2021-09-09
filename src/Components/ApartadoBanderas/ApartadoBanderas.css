@@ -1,0 +1,18 @@
+.titulo-content-principal {
+  margin-left: 5vw;
+}
+.bloque-banderas {
+  display: flex;
+  margin-left: 10vw;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-show-banderas {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  color: #ddd;
+}

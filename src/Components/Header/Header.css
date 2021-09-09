@@ -1,0 +1,19 @@
+header {
+  height: 10vh;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.lista-links {
+  list-style: none;
+  display: flex;
+}
+
+.lista-links a {
+  color: white;
+  margin-right: 20vh;
+  text-decoration: none;
+}

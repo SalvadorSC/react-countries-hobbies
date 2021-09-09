@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Components/Header/Header";
+/* import Main from "./Main"; */
+import Footer from "./Components/Footer/Footer.js";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import ApartadoEmpleados from "./Components/ApartadoEmpleados/ApartadoEmpleados";
+import ApartadoBanderas from "./Components/ApartadoBanderas/ApartadoBanderas";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PaisDetails from "./Components/PaisDetails/PaisDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <div className="contenido">
+        <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <ApartadoEmpleados />
+          </Route>
+          <Route path="/paises">
+            <ApartadoBanderas />
+          </Route>
+          <Route path="/pais/:name">
+            <PaisDetails />
+          </Route>
+        </Switch>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
